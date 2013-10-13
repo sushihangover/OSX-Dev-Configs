@@ -1,0 +1,7 @@
+Connector/Net 6.0  Release Notes
+------------------------------------
+
+Welcome to the release notes for Connector/Net 6.0
+
+6.0.7 is a maintenance release and includes bug fixes from the 6.0.6 release.  
+Please refer to the changelog for a complete list of bugs fixed.
