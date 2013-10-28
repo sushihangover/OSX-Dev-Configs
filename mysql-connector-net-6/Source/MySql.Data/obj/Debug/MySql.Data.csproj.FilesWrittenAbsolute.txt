@@ -1,0 +1,5 @@
+/Users/administrator/Documents/Code/GitRepos/OSX-Dev-Configs/mysql-connector-net-6/Source/MySql.Data/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/administrator/Documents/Code/GitRepos/OSX-Dev-Configs/mysql-connector-net-6/Source/MySql.Data/obj/Debug/MySql.Data.MySqlClient.Properties.ReservedWords.txt
+/Users/administrator/Documents/Code/GitRepos/OSX-Dev-Configs/mysql-connector-net-6/Source/MySql.Data/obj/Debug/MySql.Data.MySqlClient.Properties.Resources.resources
+/Users/administrator/Documents/Code/GitRepos/OSX-Dev-Configs/mysql-connector-net-6/Source/MySql.Data/obj/Debug/MySql.Data.dll
+/Users/administrator/Documents/Code/GitRepos/OSX-Dev-Configs/mysql-connector-net-6/Source/MySql.Data/obj/Debug/MySql.Data.dll.mdb

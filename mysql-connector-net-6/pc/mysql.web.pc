@@ -1,0 +1,5 @@
+Name: MySql.Web
+Description: Provides Connectivity to MySql Databases
+Version: 6.7.4.0
+Libs: -r:/Library/Frameworks/Mono.framework/Versions/3.2.3/mono/gac/MySql.Data/6.7.4.0__c5687fc88969c44d/MySql.Web.dll
+
