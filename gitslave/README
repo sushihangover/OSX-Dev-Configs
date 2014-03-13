@@ -1,0 +1,4 @@
+Patch to fix gitslave as git 1.9.0 changed the out of the 'status' command, breaking the parsing of the perl regexs:
+git version 1.9.0
+gits version Untagged (9ee947c9728942ac8b3a2519654fff68c309e678)
+

@@ -1,0 +1,46 @@
+diff --git a/gits b/gits
+index 6ab5eed..6ea8f73 100755
+--- a/gits
++++ b/gits
+@@ -1011,12 +1011,7 @@ sub releasecheck($@)
+     }
+ 
+     my ($premove);
+-    while ($msg =~ s/(^[^\#].*\n)//)
+-    {
+-      $premove .= $1;
+-    }
+-
+-    die "gits unexpected status output (missing branch): $msg" unless ($msg =~ s/^\# (?:On branch |(Not currently on any branch.))(.+)?\n//);
++    die "gits unexpected status output (missing branch): $msg" unless ($msg =~ s/^(?:# )?(?:On branch |Not currently on any branch.)(.+)?\n?//);
+     my $localbranch = $2;
+     if ($1 =~ /^Not/)
+     {
+@@ -3049,12 +3044,7 @@ elsif ($ARGV[0] eq 'status')
+     $okcnt++;
+ 
+     my ($premove);
+-    while ($msg =~ s/(^[^\#].*\n)//)
+-    {
+-      $premove .= $1;
+-    }
+-
+-    die "gits unexpected status output (missing branch): $msg" unless ($msg =~ s/^\# (?:On branch |Not currently on any branch.)(.+)?\n//);
++    die "gits unexpected status output (missing branch): $msg" unless ($msg =~ s/^(?:# )?(?:On branch |Not currently on any branch.)(.+)?\n?//);
+     my $localbranch = $1 ? $1 : "(no branch)";
+     $branch = $localbranch unless ($branch);
+     unless ($branch eq $localbranch)
+@@ -3205,12 +3195,7 @@ elsif ($ARGV[0] eq 'statuses')
+       $okcnt++;
+ 
+       my ($premove);
+-      while ($msg =~ s/(^[^\#].*\n)//)
+-      {
+-	$premove .= $1;
+-      }
+-
+-      unless ($msg =~ s/^\# (?:On branch |Not currently on any branch.)(.+)?\n//)
++      unless ($msg =~ s/^(?:# )?(?:On branch |Not currently on any branch.)(.+)?\n?//)
+       {
+ 	# <TODO>some way for do_checkout to only operate on some slaves</TODO>
+ 	$msg .= do_checkout(2, @oldbranch);
